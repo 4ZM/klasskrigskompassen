@@ -20,8 +20,11 @@ img {
 
     outline: 1px solid transparent;
     position: relative;
+
     margin-right: 5px;
     margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -37,9 +40,6 @@ img {
 }
 
 .flipper {
-    margin-top: 5px;
-    margin-bottom: 20px;
-
     -webkit-transition: 0.6s;
     -webkit-transform-style: preserve-3d;
 
