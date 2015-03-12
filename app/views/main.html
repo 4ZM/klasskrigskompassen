@@ -10,30 +10,24 @@
   Politiskt våld vi minns; ett spel från Allt åt alla.
 </div>
 
-<div class="row" ng-repeat="row in cards">
+<div class="flexbox" ng-repeat="row in cards">
+  <div class="flip-container"
+       ng-repeat="card in row"
+       ng-class="{'show': card.flipped}">
 
-  <div class="flexbox">
-    <div class="flip-container"
-         ng-repeat="card in row"
-         ng-class="{'show': card.flipped}">
-
-      <div class="flipper" ng-click="pick(card)">
-        <div class="front">
-          <img class="img-responsive img-rounded"
-               ng-src="{{bg_img}}"/>
+    <div class="flipper" ng-click="pick(card)">
+      <div class="front">
+        <img class="img-responsive img-rounded"
+             ng-src="{{bg_img}}"/>
         </div>
 
-        <div class="back">
-          <img class="img-responsive img-rounded"
-               ng-class="{'match-border': card.matched}"
-               ng-src="{{card.small_img}}"/>
-        </div>
+      <div class="back">
+        <img class="img-responsive img-rounded"
+             ng-class="{'match-border': card.matched}"
+             ng-src="{{card.small_img}}"/>
       </div>
-
-
     </div>
   </div>
-
 </div>
 
 <div class="row info-box img-rounded">
