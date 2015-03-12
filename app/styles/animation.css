@@ -20,6 +20,8 @@ img {
 
     outline: 1px solid transparent;
     position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 
@@ -31,11 +33,7 @@ img {
 }
 
 .flip-container, .front, .back {
-  /*
-    width: 150px;
-    height: 200px;
-  */
-  width: 22.6%;
+    width: 22.6%;
 }
 
 .flipper {
